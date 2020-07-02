@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e3a842a6-4b90-4fa6-8a38-ad4af89e470e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="dasabi" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
+        <option value="CSS File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="dev" />
+              </list>
+            </value>
+          </entry>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/dev" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1dWAdJDXr0l4b1lwCQtBpdkbFWd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/learn" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.serve" />
+        <item itemvalue="npm.serve" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e3a842a6-4b90-4fa6-8a38-ad4af89e470e" name="Default Changelist" comment="" />
+      <created>1592530561166</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592530561166</updated>
+      <workItem from="1592530566054" duration="1659000" />
+      <workItem from="1592544422158" duration="2724000" />
+      <workItem from="1592555975428" duration="9000" />
+      <workItem from="1592555999848" duration="471000" />
+      <workItem from="1592557304717" duration="34435000" />
+      <workItem from="1592720379935" duration="198000" />
+      <workItem from="1592730452137" duration="2333000" />
+      <workItem from="1592795047680" duration="10119000" />
+      <workItem from="1592813051138" duration="311000" />
+      <workItem from="1592813369533" duration="167000" />
+      <workItem from="1592833352232" duration="689000" />
+      <workItem from="1592841368408" duration="506000" />
+      <workItem from="1592961456784" duration="7131000" />
+      <workItem from="1593053026847" duration="1145000" />
+      <workItem from="1593211416348" duration="5425000" />
+      <workItem from="1593303670345" duration="277000" />
+      <workItem from="1593303969312" duration="7113000" />
+      <workItem from="1593316607196" duration="11896000" />
+      <workItem from="1593390619125" duration="32158000" />
+      <workItem from="1593586144570" duration="25472000" />
+      <workItem from="1593668444137" duration="3524000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593304445869">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1593304445869" />
+    <state x="449" y="271" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593566299199">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="449" y="271" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1593566299199" />
+    <state x="458" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593578378614">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="458" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1593578378614" />
+    <state x="415" y="159" key="#serve" timestamp="1593304255226">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="415" y="159" key="#serve/0.23.1440.877@0.23.1440.877" timestamp="1593304255226" />
+    <state x="303" y="64" key="CommitChangelistDialog2" timestamp="1593317426437">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="303" y="64" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1593317426437" />
+    <state width="1398" height="183" key="GridCell.Tab.0.bottom" timestamp="1593673056726">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="183" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1593673056726" />
+    <state width="1398" height="183" key="GridCell.Tab.0.center" timestamp="1593673056725">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="183" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1593673056725" />
+    <state width="1398" height="183" key="GridCell.Tab.0.left" timestamp="1593673056724">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="183" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1593673056724" />
+    <state width="1398" height="183" key="GridCell.Tab.0.right" timestamp="1593673056725">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="183" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1593673056725" />
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1593668428657">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1593668428657" />
+    <state width="1398" height="285" key="GridCell.Tab.1.center" timestamp="1593668428656">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1593668428656" />
+    <state width="1398" height="285" key="GridCell.Tab.1.left" timestamp="1593668428656">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1593668428656" />
+    <state width="1398" height="285" key="GridCell.Tab.1.right" timestamp="1593668428657">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1593668428657" />
+    <state width="1398" height="285" key="GridCell.Tab.2.bottom" timestamp="1593668428658">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.2.bottom/0.23.1440.877@0.23.1440.877" timestamp="1593668428658" />
+    <state width="1398" height="285" key="GridCell.Tab.2.center" timestamp="1593668428658">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.2.center/0.23.1440.877@0.23.1440.877" timestamp="1593668428658" />
+    <state width="1398" height="285" key="GridCell.Tab.2.left" timestamp="1593668428657">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.2.left/0.23.1440.877@0.23.1440.877" timestamp="1593668428657" />
+    <state width="1398" height="285" key="GridCell.Tab.2.right" timestamp="1593668428658">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.2.right/0.23.1440.877@0.23.1440.877" timestamp="1593668428658" />
+    <state width="1398" height="285" key="GridCell.Tab.3.bottom" timestamp="1593668428659">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.3.bottom/0.23.1440.877@0.23.1440.877" timestamp="1593668428659" />
+    <state width="1398" height="285" key="GridCell.Tab.3.center" timestamp="1593668428659">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.3.center/0.23.1440.877@0.23.1440.877" timestamp="1593668428659" />
+    <state width="1398" height="285" key="GridCell.Tab.3.left" timestamp="1593668428659">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.3.left/0.23.1440.877@0.23.1440.877" timestamp="1593668428659" />
+    <state width="1398" height="285" key="GridCell.Tab.3.right" timestamp="1593668428659">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.3.right/0.23.1440.877@0.23.1440.877" timestamp="1593668428659" />
+    <state x="332" y="162" key="NewModule_or_Project.wizard" timestamp="1592720544142">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="332" y="162" key="NewModule_or_Project.wizard/0.23.1440.877@0.23.1440.877" timestamp="1592720544142" />
+    <state x="221" y="63" key="SettingsEditor" timestamp="1593304075074">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="221" y="63" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1593304075074" />
+    <state x="100" y="123" width="1240" height="677" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1592809744057">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="100" y="123" width="1240" height="677" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.23.1440.877@0.23.1440.877" timestamp="1592809744057" />
+    <state x="397" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1593390619165">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="397" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1593390619165" />
+    <state x="503" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592809530897">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="503" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1592809530897" />
+    <state x="406" y="144" width="683" height="729" key="find.popup" timestamp="1592976086440">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="406" y="144" width="683" height="729" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1592976086440" />
+    <state x="444" y="276" key="jetbrains.nodejs.interpreters-dialog" timestamp="1593304049142">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="444" y="276" key="jetbrains.nodejs.interpreters-dialog/0.23.1440.877@0.23.1440.877" timestamp="1593304049142" />
+    <state x="385" y="211" width="670" height="675" key="run.anything.popup" timestamp="1592809561477">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="211" width="670" height="675" key="run.anything.popup/0.23.1440.877@0.23.1440.877" timestamp="1592809561477" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1593216984338">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1593216984338" />
+  </component>
+</project>

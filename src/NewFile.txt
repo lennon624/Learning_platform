@@ -1,0 +1,142 @@
+<template>
+
+
+
+        <el-main style="background-color: #f5f5f5">
+            <h2 class="explore-topics-skills-title" >根据类别浏览课程</h2>
+
+            <ul class="imglist">
+                <li>
+
+                    <img src="../assets/business.jpeg" />
+
+
+                </li>
+
+                <li>
+
+                    <img src="../assets/arts_and_humanities.jpeg" />
+
+
+                </li>
+                <li>
+
+                    <img src="../assets/health.jpeg" />
+
+
+                </li>
+                <li>
+                    <a href="#" >
+                        <img src="../assets/information_technology.jpeg" />
+
+                    </a>
+                </li>
+                <li>
+
+                    <img src="../assets/math_and_logic.jpeg" />
+
+
+                </li>
+                <li>
+
+                    <img src="../assets/social_sciences.jpeg" />
+
+
+                </li>
+            </ul>
+            <h2 class="explore-topics-skills-title" >为您推荐的课程</h2>
+            <books class="books-area"></books>
+
+
+        </el-main>
+<!--    </el-container>-->
+
+</template>
+
+<script>
+
+    import Books from '../components/Books'
+    export default {
+
+        components: {Books},
+        // name: "master"
+        data() {
+            return {
+                activeIndex: '1',
+                activeIndex2: '1'
+            };
+        },
+        methods: {
+            handleSelect(key, keyPath) {
+                console.log(key, keyPath);
+            }
+        }
+
+    }
+</script>
+
+<style scoped>
+    .til{
+        margin-left: 5%;
+        float: left;
+        color: #2d73cc;
+        font-weight: bolder;
+        font-size: 60px;
+        display: inline;
+    }
+
+
+    .el-header, .el-footer {
+        background-color: white;
+        color: #333;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .el-aside {
+        background-color: #D3DCE6;
+        color: #333;
+        text-align: center;
+        line-height: 200px;
+    }
+
+    .el-main {
+        background-color: #E9EEF3;
+        color: #333;
+        text-align: center;
+        line-height: 460px;
+    }
+
+    body > .el-container {
+        margin-bottom: 40px;
+    }
+
+    .el-container:nth-child(5) .el-aside,
+    .el-container:nth-child(6) .el-aside {
+        line-height: 260px;
+    }
+
+    .el-container:nth-child(7) .el-aside {
+        line-height: 320px;
+    }
+
+    .explore-topics-skills-title {
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        line-height: 32px;
+        color: #4a4a4a;
+        margin-left: -70%;
+
+    }
+    li {list-style-type:none;}
+    ul.imglist{ margin:0 auto; width:1200px; overflow:hidden}
+    ul.imglist li{ float:left; padding:8px 8px; width:360px}
+    ul.imglist li img{ display:block; width:360px; height:170px}
+    /*ul.imglist li span{ display:block; width:100%; height:30px; line-height:30px; background:#F6F6F6}*/
+    .books-area {
+        width: 1150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>

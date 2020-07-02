@@ -1,0 +1,34 @@
+.body {
+    margin: 0;
+    padding:0;
+    height: 100%;
+  }
+.login-box{
+
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 3px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.2)
+    
+}
+
+.h1 {
+    font-size: 30px;
+}
+
+.login-form{
+  
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+}
