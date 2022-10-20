@@ -253,11 +253,9 @@ export default {
         .then(resp => {
           // let token = resp.data.data.token;
           // setStore("token",token)
-
-          let user = resp.data.data.user;
-          setCookie("user", user);
-
           if (resp.data.statusCode === "200") {
+            let user = resp.data.data.user;
+            setCookie("user", user);
             this.toast(resp.data.message, 1);
             this.navigator("/Home");
           }
@@ -318,15 +316,9 @@ export default {
           })
             .then(resp => {
               if (resp.data.statusCode === "200") {
-                this.toast(resp.data.message, 1);
-                
-                console.log(resp);
-                
-                //账户信息存储在cookie
                 let user = resp.data.data.user;
                 setCookie("user", user);
-                setCookie("email", resp.data.data.user.email);
-                setCookie("tel", resp.data.data.user.tel);
+                this.toast(resp.data.message, 1);
                 if (resp.data.data.isNew == "1") {
                   //1 表示新用户 跳转到信息完善界面
                   this.$router.push({

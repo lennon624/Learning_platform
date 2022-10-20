@@ -1,12 +1,11 @@
 <template>
   <div class="one">
     <h3 class="top">作业</h3>
-
-    <el-card class="box-card">
+    <!-- <el-divider></el-divider> -->
+    <el-card class="box-card" shadow="never">
       <div v-for="o in this.chapters" :key="o.id">
         {{o.chapter}}
         <uploadHomework :chapter="o"></uploadHomework>
-        <el-divider></el-divider>
       </div>
     </el-card>
   </div>
@@ -90,10 +89,6 @@ export default {
   margin-right: 600px;
 }
 
-.box-card {
-  width: 800px;
-  margin: 0 auto;
-}
 .one {
   border-style: solid;
   border-width: 0.1px;
@@ -101,5 +96,13 @@ export default {
   border-color: #edeeef;
   background-color: white;
   margin-left: 0px;
+}
+
+.box-card {
+  width: 100%;
+  margin: 0 auto;
+  border: none;
+  border-radius: 0;
+  border-top:solid 2px #edeeef;
 }
 </style>

@@ -25,13 +25,21 @@
           <el-input v-model="refineForm.tel" disabled></el-input>
         </el-form-item>
         <el-form-item label="兴趣选择:" prop="tel">
-          <el-checkbox-group v-model="checkboxGroup" size="big">
+          <!-- <el-checkbox-group v-model="checkboxGroup" size="big">
             <el-checkbox label="商业" border></el-checkbox>
             <el-checkbox label="艺术与人文" border></el-checkbox>
             <el-checkbox label="农业" border></el-checkbox>
             <el-checkbox label="物理学" border></el-checkbox>
             <el-checkbox label="数学与逻辑" border></el-checkbox>
             <el-checkbox label="计算机科学" border></el-checkbox>
+          </el-checkbox-group>-->
+          <el-checkbox-group v-model="checkboxGroup" size="mini" class="interestsContainer">
+            <el-checkbox
+              v-for="item in items"
+              :label="item.id"
+              :key="item.id"
+              border
+            >{{item.categoryName}}</el-checkbox>
           </el-checkbox-group>
         </el-form-item>
       </el-form>
@@ -45,9 +53,17 @@
 import { getCookie, setCookie, removeCookie } from "@/libs/cookie";
 import Vcode from "vue-puzzle-vcode";
 import { refineInfo } from "@/api/modules/user";
+import { getChildCategory2 } from "@/api/modules/category";
 
 export default {
   name: "infoRefine",
+  mounted() {
+    this.user = JSON.parse(getCookie("user") || "{}");
+    // this.studentId = this.user.etc.id;
+
+    //获取所有兴趣选项
+    this.getChildCategory();
+  },
   data() {
     //用户名验证
     var checkLength = (rule, value, callback) => {
@@ -98,6 +114,7 @@ export default {
         email: "",
         tel: this.$route.query.tel //接收上一个界面传来的参数
       },
+      items: "",
       checkboxGroup: [],
       refineRules: {
         username: { validator: checkLength, trigger: "blur" },
@@ -107,11 +124,22 @@ export default {
     };
   },
   methods: {
+    getChildCategory() {
+      getChildCategory2()
+        .then(resp => {
+          console.log(resp);
+          // console.log(resp.data.data)
+          this.items = resp.data.data;
+        })
+        .catch(data => {
+          this.toast(data, 2);
+        });
+    },
     updateInfo() {
       this.$refs.refineForm.validate(valid => {
         if (valid) {
-              // console.log(JSON.stringify(this.checkboxGroup));
-              // console.log(typeof(JSON.stringify(this.checkboxGroup)));
+          console.log(JSON.stringify(this.checkboxGroup));
+          // console.log(typeof(JSON.stringify(this.checkboxGroup)));
           refineInfo({
             username: this.refineForm.username,
             password: this.refineForm.password,
@@ -120,10 +148,8 @@ export default {
             interests: JSON.stringify(this.checkboxGroup)
           })
             .then(resp => {
-              let user = JSON.parse(getCookie("user") || "{}");
-              user.username = this.refineForm.username;
-              user.email = this.refineForm.email;
-              setCookie("user", JSON.stringify(user));
+              let user = resp.data.data.user
+              setCookie("user", user)
               this.toast(resp.data.message, 1);
               this.navigator("/Home");
             })
@@ -138,29 +164,23 @@ export default {
 </script>
 
 <style lang="scss" >
-html {
-  // background-image: url("../assets/loginBack.jpeg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  // background-color: blue;
-}
 h2 {
   color: #2897ff;
 }
 
 .infoRefine-container {
-  margin: 50px auto;
-  height: 650px;
-  width: 1000px;
+  margin: 36px auto;
+  height: 694px;
+  width: 1100px;
   border: solid 1px none;
   border-radius: 20px;
   box-shadow: #d5dadf 6px 9px 33px 5px;
-  background-color: rgba($color: white, $alpha: 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .imgContainer {
   float: left;
-  height: 650px;
+  height: 700px;
   width: 400px;
   background-color: rgba($color: white, $alpha: 0.1);
 }
@@ -175,17 +195,24 @@ h2 {
 
 .inputForm {
   float: left;
-  height: 650px;
+  height: 700px;
   width: 470px;
-  padding: 0px 65px;
+  padding: 0px 95px;
 }
 
-.el-checkbox.is-bordered {
-  margin: 10px;
+// .el-checkbox.is-bordered {
+//   // margin: 10px;
+// }
+.interestsContainer{
+    line-height: 38px;
+    // position: relative;
+    // font-size: 14px;
+    
 }
 
 .btn {
-  margin: auto 220px;
+  margin: -20px 220px;
+  padding: 100px 100px 
 }
 </style>
 

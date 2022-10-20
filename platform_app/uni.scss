@@ -1,0 +1,116 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+
+/* 颜色变量 */
+
+/* 行为相关颜色 */
+$uni-color-primary: #007aff;
+$uni-color-success: #4cd964;
+$uni-color-warning: #f0ad4e;
+$uni-color-error: #dd524d;
+
+/* 文字基本颜色 */
+$uni-text-color:#333;//基本色
+$uni-text-color-inverse:#fff;//反色
+$uni-text-color-grey:#999;//辅助灰色，如加载更多的提示信息
+$uni-text-color-placeholder: #808080;
+$uni-text-color-disable:#c0c0c0;
+
+/* 背景颜色 */
+$uni-bg-color:#ffffff;
+$uni-bg-color-grey:#f8f8f8;
+$uni-bg-color-hover:#f1f1f1;//点击状态颜色
+$uni-bg-color-mask:rgba(0, 0, 0, 0.4);//遮罩颜色
+
+/* 边框颜色 */
+$uni-border-color:#e5e5e5;
+
+/* 尺寸变量 */
+
+/* 文字尺寸 */
+$uni-font-size-sm:24rpx;
+$uni-font-size-base:28rpx;
+$uni-font-size-lg:32rpx;
+
+/* 图片尺寸 */
+$uni-img-size-sm:40rpx;
+$uni-img-size-base:52rpx;
+$uni-img-size-lg:80rpx;
+
+/* Border Radius */
+$uni-border-radius-sm: 4rpx;
+$uni-border-radius-base: 6rpx;
+$uni-border-radius-lg: 12rpx;
+$uni-border-radius-circle: 50%;
+
+/* 水平间距 */
+$uni-spacing-row-sm: 10px;
+$uni-spacing-row-base: 20rpx;
+$uni-spacing-row-lg: 30rpx;
+
+/* 垂直间距 */
+$uni-spacing-col-sm: 8rpx;
+$uni-spacing-col-base: 16rpx;
+$uni-spacing-col-lg: 24rpx;
+
+/* 透明度 */
+$uni-opacity-disabled: 0.3; // 组件禁用态的透明度
+
+/* 文章场景相关 */
+$uni-color-title: #2C405A; // 文章标题颜色
+$uni-font-size-title:40rpx;
+$uni-color-subtitle: #555555; // 二级标题颜色
+$uni-font-size-subtitle:36rpx;
+$uni-color-paragraph: #3F536E; // 文章段落颜色
+$uni-font-size-paragraph:30rpx;
+
+/* uni.scss */
+@import 'uview-ui/theme.scss';
+
+
+
+/* 颜色变量 */
+
+/* 主要颜色 */
+
+$dominantHue:#0086E7;//主色调 蓝
+
+$lightBlue:#ECF3FD;//淡蓝
+
+//背景浅灰
+$bgLightGray:#f7f7f7; //浅灰
+
+/* 文本颜色 */
+$blackAll: #333333; //主文字颜色 黑
+$mediumGrey: #666777;//副文字颜色  中灰
+$lightGray: #a4a6bf;//副文字颜色  浅灰
+$redAll:#FF5050;// 文本红色
+
+
+$bleed:30upx;//屏幕左右边距
+
+//屏幕适配数值
+$barTopHeight:44px; //XR系列状态栏高度
+$navBoxHeight:34px; //XR系列底部 HOME 健预留高
+$navHeight:49px; //底部导航栏高度
+$barHeight:44px; //顶部标题栏高度
+$classifyTopH:44px; //分类顶部选项卡高
+$stairTop: 68px;// 一级页面头部距离
+$stairTopTow: 92px;// XR系列一级页面头部距离
+
+/* 其它颜色 */
+$skeletonColor:#eaeaea; //骨架背景色 图片为加载完成的背景颜色
+$rippleBg:#EEEEEE;//全局分割线颜色
+$brimColor:#EAEAEA; //书架复选框颜色
+$starColor:#FFB32F;//星星 黄

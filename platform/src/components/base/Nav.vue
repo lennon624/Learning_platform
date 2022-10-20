@@ -92,7 +92,6 @@ export default {
     this.getcategory();
     let user = JSON.parse(getCookie("user") || "{}");
     this.username = user.username;
-    console.log(this.username);
   },
   methods: {
     //通过课程名查询课程
@@ -118,6 +117,8 @@ export default {
     },
     //退出登录
     signout() {
+      let user = getCookie("user");
+      removeCookie("user", user);
       removeStore("user");
       this.navigator("/login");
     },
@@ -139,7 +140,6 @@ export default {
       getparentcategory()
         .then(res => {
           this.kids = res.data.data;
-          console.log(this.kids);
         })
         .catch(err => {
           this.toast(err, 2);

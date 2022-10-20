@@ -1,10 +1,8 @@
 <template>
   <div class="one">
     <h3 class="top">课程介绍</h3>
-   <el-divider></el-divider>
-    <textarea class="zheng">
-  {{this.course.introduction}}
-</textarea>
+    <!-- <el-divider></el-divider> -->
+    <el-card class="box-card" shadow="never">{{this.course.introduction}}</el-card>
   </div>
 </template>
 
@@ -32,12 +30,19 @@ export default {
   border: 0;
   margin-right: 450px;
 }
-  .one{
-    border-style:solid;
-    border-width:0.1px;
-    border-radius: 10px;
-    border-color: #edeeef;
-    background-color: white;
-    margin-left: 0px;
-  }
+.one {
+  border-style: solid;
+  border-width: 0.1px;
+  border-radius: 10px;
+  border-color: #edeeef;
+  background-color: white;
+  margin-left: 0px;
+}
+.box-card {
+  width: 100%;
+  margin: 0 auto;
+  border: none;
+  border-radius: 0;
+  border-top:solid 2px #edeeef;
+}
 </style>

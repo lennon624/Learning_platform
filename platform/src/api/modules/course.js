@@ -27,4 +27,14 @@ export const getCourseByParentCategoryId = (params) => {
 
 export const getMyCourseList = (params) => {
     return postRequest('sys/course/getMyCourseList', params)
+}   
+
+export const getCommentsById = (params) => {
+    return postRequest('sys/course-comment/getCommentsById', params)
+} 
+
+
+
+export const comment = (params) => {
+    return postRequest('sys/student/comment', params)
 } 

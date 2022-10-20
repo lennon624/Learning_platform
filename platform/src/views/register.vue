@@ -230,7 +230,7 @@ export default {
       register(this.registerForm)
         .then(resp => {
           this.toast(resp.data.message, 1);
-          this.navigator("/Home");
+          this.navigator("/login");
         })
         .catch(data => {
           this.toast(data, 2);

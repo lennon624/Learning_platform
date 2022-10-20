@@ -1,0 +1,149 @@
+{
+  "id": "2059570",
+  "name": "classs",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3727360",
+      "name": "分享",
+      "font_class": "fenxiang",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "3727361",
+      "name": "分析",
+      "font_class": "fenxi",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "3727362",
+      "name": "成绩",
+      "font_class": "chengji",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "3727363",
+      "name": "举手回答",
+      "font_class": "jushouhuida",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "3727364",
+      "name": "举一反三",
+      "font_class": "juyifansan",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "3727365",
+      "name": "解疑",
+      "font_class": "jieyi",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "3727366",
+      "name": "考试",
+      "font_class": "kaoshi",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "3727367",
+      "name": "课程表",
+      "font_class": "kechengbiao",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "3727368",
+      "name": "课堂",
+      "font_class": "ketang",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "3727369",
+      "name": "练习",
+      "font_class": "lianxi",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "3727370",
+      "name": "例子",
+      "font_class": "lizi",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "3727371",
+      "name": "目录",
+      "font_class": "mulu",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "3727372",
+      "name": "男同学",
+      "font_class": "nantongxue",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "3727373",
+      "name": "灵感",
+      "font_class": "linggan",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "3727374",
+      "name": "女同学",
+      "font_class": "nvtongxue",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "3727375",
+      "name": "时间",
+      "font_class": "shijian",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "3727376",
+      "name": "讨论",
+      "font_class": "taolun",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "3727377",
+      "name": "疑问",
+      "font_class": "yiwen",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "3727378",
+      "name": "学习",
+      "font_class": "xuexi",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "3727379",
+      "name": "作业",
+      "font_class": "zuoye",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    }
+  ]
+}

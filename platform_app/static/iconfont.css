@@ -1,0 +1,28 @@
+@font-face {
+	font-family: "custom-icon";
+	src: url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAASwAAsAAAAACTwAAARhAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDGgqFTIRaATYCJAMUCwwABCAFhREHTBv2B1FUTbpkPxJsWw4rXAhmznUpOoJwrbNLIYST/o2H/tf43Xlvdr9KVAe6WTSplkwyVax0SuIQkjWLnsm739ybTwMUNs8PkBT6g1zL6culAxJ+Tk/5zagN5ZXh2leZkxz90qt19rtpveZVUFDwBXD6+5X+tE3AeiCwke9vl21TRAgtYAJ14V60HvDd+IH5DWMXl3GdQL8ZMzrHzm7uYUTS5gXiVpYYGIkZZAk79KrbnK0p3sL1lmflKkDeuD8f/2BQiCiaSlt6+uaph4Of8M9+fdpRSmyEuD8bmF1UbAFJXM11nNfzQ1t6+iVH31r5+BT8zK7jZ9ii2UL4H6+oREuDg5A8FE5+hikKqQKV0lSFSpBKSDlHvNnSjz78AMU8jbYElt3+krL704y3s2nkNtty0m0g/d3Se03A6ZSApC5L9SRcLh3wmn37uud79ESqe2aHhbQbwy+wBrYDZ9BMkG6HDuQHwgYyP7PFmk+4cl2J5QqsvnY5rU/loKSyXZwSRy8SZO07Dek2GLdv6e6RKpcqznOd4MAWOmeGqJxUSW+B5ZQoU+UwkG472aQn8j10jtIBpyTdZsGLjse82eWpY2aCyu5tM5A1zqTB4LYb6yUOpIB7PYf05HxZHcMAliV4Pt+zJZWDLI4jn3BEXPe0w4ZulVc29aD/H6i+1AlgTzuAR9ohHSOhTt3Rro8Gb77wj77Y2NJi+k2LkhdHpY4ST42F/na18DfZo7s7dWFO1vzo9sNK7cQMij/0u/kO3hHN5adKT69nO3HtoUGL3s0638WkHwFVKxV7jU3aZ9omQ1JpHfj7EwgNssr3dUue3H2vPB8atLM3WTltmmELUtetDtmirdOSpiS2yjBtWuVfzVGGudbR1/Hhfk3x0Mu+xjBHNR3qEKiCwP7m0LDOquggi+C5aioElFgUzPftPDB4S/u2gsUJ5cR+uIqA9vf/0Dq++6d12r1XkQ1o6NatELoOubzT4Ghv/9yjvTXzhd2CHMf+/kGPI9sffJNkCUB3A/3Q2+tyOPROb53Dou9q78hJ9H3vyP/yN7682lFSPr3zv1ea4OuTN8uhrzuJqRcLehVqi/8Occ2WlKWasUmx3BSJrsap2wwLI4TmDtI84377UU3VjicMmApB0WMOVANW0ST3oQ25H23JU6DfprvdAyZ86Ynsw4ZvAMK0H1AM+wiqaX9okv9IQw8p2pIdQb+LsX7kgJVY2z9ZyCh5tK+YOa6Dkaljro3K1Wy89y0lbWmELQ38jyQxg924OLeQEz2nmqS/FfEpWVINGIQrPOv4NipLxkY4J6dzqWqzNT8f8l5pznEFY44SxFDEQ9YrlHFYLdiH1ZhrWpFildmy33OLJFolQ8pryAk8IsLCDI0GLZqzUA89h3XdinNcHT1JLFEqQAEL27nQ2axtpNRDDDX5k3LEUXPSFoHGlnnUKdSFc+Oqqqsu/nKrai/ZRIkaGU208qEaGbHMRWWkGPH8XJds/CCmRggAAAAA') format('woff2');
+}
+
+.custom-icon {
+	font-family: "custom-icon" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.custom-icon-star:before {
+	content: "\e602";
+}
+
+.custom-icon-bookmark:before {
+	content: "\e603";
+}
+
+.custom-icon-download:before {
+	content: "\e604";
+}
+
+.custom-icon-share:before {
+	content: "\e601";
+}

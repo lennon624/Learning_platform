@@ -9,22 +9,19 @@
           <h4 class="name">{{username}}</h4>
         </div>
       </div>
-      <!--            <div class="about">-->
-      <!--                <h3>个人介绍</h3>水电费水电费水电费收到。<br/>水电费水电费水电费的说法-->
-      <!--            </div>-->
       <div>
         <h3>个人信息</h3>
         <div>
-          <i>手机：</i>
-          <span>900-000-000</span>
+          <i>用户名：</i>
+          <span>{{this.user.username}}</span>
         </div>
         <div>
-          <i></i>学校：
-          <span>黑心大学</span>
+          <i>手机：</i>
+          <span>{{this.user.tel}}</span>
         </div>
         <div>
           <i></i>邮箱：
-          <span>231231@gmail.com</span>
+          <span>{{this.user.email}}</span>
         </div>
         <!--                <div > <i ></i><span>codepen.io/xichen</span></div>-->
       </div>
@@ -41,13 +38,16 @@
         <br />
         <br />
         <br />
-        <el-checkbox-group v-model="list" >
-          <el-checkbox v-for="item in items" :label="item.id" :key="item.id">{{item.categoryName}}</el-checkbox>
+        <el-checkbox-group v-model="list">
+          <el-checkbox
+            v-for="item in items"
+            :label="item.id"
+            :key="item.id"
+            :checked="item.etc"
+            @change="checked=>handleChange(checked, item)"
+          >{{item.categoryName}}</el-checkbox>
         </el-checkbox-group>
         <br />
-       
-
-        <el-button type="success" plain style="margin-top: 30%" @click="song">确认选择</el-button>
       </div>
     </div>
   </div>
@@ -56,7 +56,11 @@
 <script>
 import { getCookie, setCookie, removeCookie } from "@/libs/cookie";
 import { getChildCategory2 } from "@/api/modules/category";
-import { selectInterests } from "@/api/modules/student";
+import {
+  selectInterests,
+  removeInterest,
+  addInterest
+} from "@/api/modules/student";
 export default {
   name: "profile",
   mounted() {
@@ -69,50 +73,44 @@ export default {
   data() {
     return {
       username: "",
-      
       studentId: "",
       user: "",
-      items:"",
-      list:[],
+      items: "",
+      list: []
     };
   },
   methods: {
     //获取所有兴趣选项
     getChildCategory3() {
-      getChildCategory2()
+      getChildCategory2({ studentId: this.studentId })
         .then(resp => {
-            console.log(resp)
-            this.items = resp.data.data;
+          this.items = resp.data.data;
         })
         .catch(data => {
           this.toast(data, 2);
         });
     },
-    song(){
-      console.log(this.list)
-       let id = [];
-        this.list.forEach(item =>{
-          id.push(item)
-        
-        })
-        
-      selectInterests({ids:id.join(',') , studentId: this.studentId})
-        .then(resp => {
-            console.log(resp)
-        
-  
-      this.$message({
-        message: "添加成功",
-        type: "success"
-      });
-     
- 
-        })
-        .catch(data => {
-          this.toast(data, 2);
-        });
 
-    },
+    // 复选框改变
+    handleChange(checked, item) {
+      if (checked == true) {
+        addInterest({ studentId: this.studentId, childCategoryId: item.id })
+          .then(resp => {
+            this.toast(resp.data.message, 1);
+          })
+          .catch(data => {
+            console.log(data);
+          });
+      } else if (checked == false) {
+        removeInterest({ studentId: this.studentId, childCategoryId: item.id })
+          .then(resp => {
+            this.toast(resp.data.message, 1);
+          })
+          .catch(data => {
+            console.log(data);
+          });
+      }
+    }
   }
 };
 </script>

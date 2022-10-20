@@ -62,7 +62,11 @@ const routes = [
         }
       },
     
-     
+      {
+        path: '/searchcourse?coursename',
+        name: 'searchcourse',
+        component: searchcourse,
+      },
       {
         path: '/searchcourse',
         name: 'searchcourse',

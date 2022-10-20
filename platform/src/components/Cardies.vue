@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="container">
-      <div class="row active-with-click">
+      <div class="row active-with-click" v-if="this.noInterest == false">
         <div class="col-md-3 col-sm-6 col-xs-12" v-for="item in items" :key="item.id">
           <article class="material-card Indigo">
             <h2>
@@ -26,6 +26,9 @@
             </div>
           </article>
         </div>
+      </div>
+      <div style="padding-bottom: 40px" v-if="this.noInterest">
+        <h3>你还未选择兴趣噢 点击右上角头像→个人资料选择兴趣吧</h3>
       </div>
     </section>
   </div>
@@ -53,6 +56,7 @@ export default {
       studentid: "",
       myuser: "",
       list :'',
+      noInterest: false,
     };
   },
   created() {
@@ -86,15 +90,17 @@ export default {
 
     getcbyi() {
       //根据兴趣推荐课程
-
       coursebyinterest({ student_id: this.studentid })
         .then(resp => {
           this.items = resp.data.data;
+          console.log("this.items");
           console.log(this.items);
           //  this.queryMyList1()
         })
         .catch(data => {
-          this.toast(data, 2);
+          this.noInterest = true;
+          console.log(this.noInterest);
+          // this.toast(data, 2);
         });
     },
     // //改变课程状态
